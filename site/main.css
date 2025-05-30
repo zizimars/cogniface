@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 100px;
+    overflow: hidden;
+    text-align: center;
+}
+li {
+    float: right;
+    margin: 30px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header1 header2"
+        "hero hero"
+        /*"hero hero"*/
+        "solution solution"
+        "about about"
+        "patent patent"
+        "form form"
+        "footer1 footer2";
+    margin: 0;
+    padding: 0;
+}
+
+.grid-header1{
+    grid-area: header1;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    margin: 0 100px;
+}
+.grid-header2{
+    grid-area: header2;
+    text-align: right;
+    font-size: 16px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    font: 40px "Roboto Light";
+    color: #1d96f5;
+    text-align: center;
+    text-shadow: 0px 0.6px 0px #000000;
+    margin: 0;
+    padding: 0 0;
+
+}
+.nav-link{
+    font: 20px "Roboto Light";
+    color: gray;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.grid-hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /*gap: 20px;*/
+    background-image: url("./images/scaled-bg.png");
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+}
+
+.grid-hero1 {
+    padding: 25px 220px;
+}
+
+.grid-hero2 {
+    horiz-align: right;
+    /*padding: 0px 0px 0px 0px;*/
+}
+
+.big{
+    font: 72px "Helvetica";
+    font-weight: bold;
+    color: #0770ad;
+    text-align: left;
+    text-shadow: 0 .6px 0.8px;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.normal-text{
+    font: 22px "Roboto Light";
+    color: black;
+    text-align: left;
+    margin: 10px 0 0 0;
+    /*padding: 20px 0;*/
+}
+
+.title-bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.smooth-corner{
+    border-radius: 20px;
+}
+
+.grid-solution{
+    grid-area: solution;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 1fr;
+    background-color: #4790bb;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.solution-header{
+    grid-column:  1 / 4;
+    font: 42px "Helvetica";
+    font-weight: bold;
+    color: #f0f0f0;
+    text-align: center;
+    text-shadow: 0 .6px 0.8px;
+    margin: 0;
+    padding: 40px 0px 0px 40px;
+}
+
+.sol1, .sol2, .sol3 {
+    background-color: #4790bb;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.sol1-text, .sol2-text, .sol3-text {
+    text-align: center;
+    color: #f0f0f0;
+    justify-content: start;
+    padding: 0 30px 40px 30px;
+}
+
+
+.features-list{
+    list-style-type: circle;
+    font-size: 20px;
+    color: #f0f0f0;
+    overflow: hidden;
+    text-align: left;
+    line-height: 25px;
+}
+.features-items{
+    margin: 0;
+    padding: 0.2em 0;
+}
+
+.grid-about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    background-color: #f0f0f0;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.about-header{
+    grid-column: 1 / 5;
+    font: 42px "Helvetica";
+    font-weight: bold;
+    color: #0770ad;
+    text-align: center;
+    text-shadow: 0 .6px 0.8px;
+    padding: 40px 40px 40px 40px;
+}
+.about-text{
+    font: 20px "Roboto Light";
+    color: #54707e;
+    text-align: left;
+    /*padding: 20px 0px 0px 40px;*/
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2-text {
+    grid-column: 1 / 4;
+    padding: 0 50px 0 200px;
+}
+.row2-image {
+    grid-column: 4 / 5;
+    padding: 0 200px 0 50px;
+}
+.row3-text {
+    grid-column: 2 / 5;
+    padding: 0 200px 0 50px;
+}
+.row3-image {
+    grid-column: 1 / 2;
+    padding: 0 50px 0 200px;
+}
+
+.grid-form{
+    grid-area: form;
+    background-image: url("./images/form-bg.jpg");
+    display: grid;
+    grid-template-areas: "description form";
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+    padding: 20px;
+
+}
+
+.form-description{
+    grid-area: description;
+    font: 20px "Helvetica";
+    color: #f0f0f0;
+    text-align: left;
+    padding: 20px 250px;
+}
+
+.form-form{
+    grid-area: form;
+    margin: 50px 50px 0px 0px;
+    background-color: white;
+    width: 60%;
+}
+
+.input-label {
+    background-color: white;
+    color: #1d4c69;
+    font-size: 14px;
+    position: absolute;
+    left: 28px;
+    top: -7px;
+    padding: 0 2px;
+}
+.example-group {
+    position: relative;
+    display: grid;
+    margin: 20px;
+    width: 93%;
+}
+.example-input {
+    background-color: white;
+    border-color: #0770ad;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-button{
+    background-color: #0770ad;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    /*margin-top: 10px;*/
+    margin-bottom: 20px;
+}
+
+.grid-patent{
+    grid-area: patent;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    background-color: #f0f0f0;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.patent1{
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: center;
+    padding: 20px 40px 0 40px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.patent2{
+    grid-column: 2 / 3;
+}
+
+.patent3{
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    margin: 0px;
+    padding: 20px 40px 0 40px;
+}
+
+
+.grid-footer{
+    grid-area: footer1;
+    display: grid;
+    background-color: black;
+    color: white;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    padding: 40px 0px;
+    margin: 0;
+}
+
+.footer-text{
+    padding-left: 250px;
+}
