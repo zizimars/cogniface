@@ -3,192 +3,440 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Main Page</title>
+    <title>Cogniface | Brain-Computer Interface Solutions</title>
     <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="grid">
-        <!-- Header -->
-
-        <div class="grid-header1">
-            <a class="logo">
-                <img src="./images/logo-cogniface.png" alt="logo" width="50" height="50" style="vertical-align: text-top; margin: 0 10px 0 100px">
-                Cogniface
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="./images/logo-cogniface.png" alt="Cogniface Logo" width="45" height="45">
+                <span>Cogniface</span>
             </a>
-        </div>
-        <div class="grid-header2">
-            <ul class="nav-list">
-                <li><a class="nav-link"> Contact </a></li>
-                <li><a class="nav-link"> About </a></li>
-                <li><a class="nav-link"> Solutions </a></li>
-            </ul>
-        </div>
-        <!-- Main Content -->
-        <div class="grid-hero">
-            <div class="grid-hero1">
-                <a class="title-bold smooth-corner" style="background-color: forestgreen; color:white; margin: 0; padding: 5px 50px 5px 20px"> Patent-based Technology </a>
-                <pre class="big">Revolutionary AI Solutions </pre>
-                <pre class="big">for Modern Healthcare </pre>
-                <pre class="normal-text">Empowering clinicians with breakthrough facial reconstruction technology </pre>
-                <pre class="normal-text">intelligent patient monitoring, and therapeutic AI support systems.</pre>
-            </div>
-
-            <div class="grid-hero2">
-                <img src="./images/head-hero.png" alt="hero" width="100%" height="100%" style="vertical-align: center; margin: 0; padding: 0">
-            </div>
-        </div>
-        <!-- Solutions Content -->
-        <div class="grid-solution">
-            <div class="solution-header"> Our AI-Powered Healthcare Solutions </div>
-            <div class="sol1">
-                <img src="./images/template-box.png" alt="solution1" width="80%" height="80%">
-            </div>
-            <div class="sol2">
-                <img src="./images/template-box.png" alt="solution1" width="80%" height="80%" style="vertical-align: middle;">
-            </div>
-            <div class="sol3">
-                <img src="./images/template-box.png" alt="solution1" width="80%" height="80%" style="vertical-align: middle;">
-            </div>
-
-            <div class="sol1-text">
-                <h2> EEG2Face™ — Patented Neural Interface</h2>
-                <ul class="features-list">
-                    <li class="features-items">Real-time EEG signal processing for instant facial expression reconstruction</li>
-                    <li class="features-items">Non-invasive brain-computer interface requiring no surgical implants</li>
-                    <li class="features-items">Personalized emotion mapping calibrated to individual neural patterns</li>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#patents" class="nav-link">Patents</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-            <div class="sol2-text">
-                <h2> Multimodal Fusion AI System — Unlock complete human insights through brain, face, and voice fusion.</h2>
-                <ul class="features-list">
-                    <li class="features-items">Combines brain waves, facial expressions, and voice into one powerful AI system that understands you better than single-input solutions.</li>
-                    <li class="features-items">When one signal is weak or missing, our AI automatically uses the stronger signals to maintain perfect accuracy — no data loss, ever.</li>
-                    <li class="features-items">Works with any EEG headset, camera, or microphone you already own while delivering enterprise-grade results without the enterprise overhead.</li>
-                </ul>
-            </div>
-            <div class="sol3-text">
-                <h2> EEG Emotion State Monitoring System </h2>
-                <ul class="features-list">
-                    <li class="features-items">Detects happiness, stress, excitement, and calmness in real-time through brain signals — no cameras, surveys, or interruptions needed.</li>
-                    <li class="features-items">Simply wear any EEG headset and get continuous emotional insights while users naturally interact with your content or products.</li>
-                    <li class="features-items">Ready-to-use API works with any EEG device and integrates seamlessly into apps, games, VR experiences, or testing environments.</li>
-                </ul>
-            </div>
-            </div>
+                <a href="#contact" class="cta-button">Request a Demo</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- About Us -->
-        <div class="grid-about">
-            <div class="about-header"> Who We Are? </div>
-            <div class="about-text row2-text">
-                <h2> Our Story </h2>
-                <p class="smooth-corner"> Born from a shared fascination with the intersection of science, artificial intelligence,
-                    and medicine, our company represents the convergence of breakthrough research and compassionate
-                    care. We are a close-knit team of researchers, engineers, and medical professionals who recognized
-                    that the most profound challenges in neurological and psychological medicine require innovative,
-                    interdisciplinary solutions.</p>
-            </div>
-            <div class="about-image row2-image">
-                <img src="./images/template-box.png" alt="solution1" width="50%" height="50%">
-            </div>
-            <div class="about-image row3-image ">
-                <img src="./images/template-box.png" alt="solution1" width="50%" height="50%" style="vertical-align: middle;">
-            </div>
-            <div class="about-text row3-text ">
-                <h2> Our Mission </h2>
-                <p> We exist to transform the lives of individuals suffering from neurological and psychological diseases
-                    through revolutionary AI-powered medical technologies. Our work focuses on restoring fundamental human
-                    capabilities — communication, expression, and connection — that these conditions often compromise or
-                    eliminate entirely.</p>
-            </div>
-            <div class="about-text row2-text">
-                <h2> The Challenge We Address </h2>
-                <p> Neurological and psychological diseases affect millions worldwide, often robbing patients of
-                    their ability to communicate, express emotions, or maintain independence. Traditional treatment approaches,
-                    while valuable, frequently fall short of addressing the complex, individualized needs of each patient.
-                    We recognized this gap and dedicated ourselves to developing technologies
-                    that go beyond symptom management to restore genuine human connection and dignity..</p>
-            </div>
-            <div class="about-image row2-image">
-                <img src="./images/template-box.png" alt="solution1" width="50%" height="50%" style="vertical-align: middle;">
-            </div>
-            <div class="about-image row3-image">
-                <img src="./images/template-box.png" alt="solution1" width="50%" height="50%" style="vertical-align: middle;">
-            </div>
-            <div class="about-text row3-text">
-                <h2> Our Approach </h2>
-                <p> What sets us apart is our unique combination of deep scientific expertise and genuine empathy for
-                    patient experiences. We don't just develop technology — we create bridges between the human brain's
-                    incredible potential and the external world. Our solutions are designed with real patients in mind,
-                    incorporating feedback from healthcare providers, patients, and families throughout the development
-                    process</p>
-            </div>
-        </div>
-        <!-- Patent -->
-        <div class="grid-patent">
-            <div class="patent1">
-                <p> The technology offers groundbreaking applications for healthcare professionals working with patients who have communication disabilities, allowing them to express themselves through thought-controlled facial expressions and potentially revolutionizing therapeutic assessment and treatment planning. </p>
-            </div>
-            <div class="patent2">
-                <img src="./images/patent-img.jpg" alt="patent" width="100%" height="100%" style="vertical-align: middle; margin: 0; padding: 0">
-            </div>
-            <div class="patent3">
-                <div>
-                    <p>Digitally signed by S. Akhmetov, Director of the National Institute of Intellectual Property</p>
-                    <p>Registered with Kazakhstan's Ministry of Justice</p>
-                    <p>Full patent details available at <a href="https://www.kazpatent.kz" target="_blank" rel="noopener noreferrer">www.kazpatent.kz</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Contact Form -->
-        <div class="grid-form">
-            <div class="form-description">
-                <h1>Ready to Transform Your Healthcare Practice? </h1>
-                <p>
-                    Lorem Impusum
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">Patented BCI Technology</span>
+                <h1>Revolutionary AI Solutions<br>for Modern Healthcare</h1>
+                <p class="hero-description">
+                    Empowering clinicians with breakthrough facial reconstruction technology,
+                    intelligent patient monitoring, and therapeutic AI support systems.
                 </p>
-            </div>
-            <div class="form-form smooth-corner">
-    <!--            <h3 style="horiz-align: left;"> Form </h3>-->
-                <div class="example-group" style="padding-top: 20px">
-                    <label for="name" class="input-label" style="padding-top: 20px">Full Name</label>
-                    <input type="text" id="name" class="example-input" placeholder="John Snow" required>
-                </div>
-                <div class="example-group">
-                    <label for="email" class="input-label">Email</label>
-                    <input type="text" id="email" class="example-input" placeholder="your.email@example.com" required>
-                </div>
-                <div class="example-group">
-                    <label class="input-label">Organization</label>
-                    <input type="text" class="example-input" placeholder="" required>
-                </div>
-                <div class="example-group">
-                    <label class="input-label">Solution Interest</label>
-                    <select type="text" class="example-input">
-                        <option value=""> Select from </option>
-                        <option value="3DReconstruction"> 3D Reconstruction </option>
-                        <option value="BCISystem"> BCI System </option>
-                        <option value="EffectiveAnomalyDetection">Effective Anomaly Detection</option>
-                        <option value="TherapeuticAI"> Other </option>
-                    </select>
-                </div>
-                <div class="example-group">
-                    <label class="input-label">Comments</label>
-                    <input type="text" class="example-input" style ="padding: 40px;" placeholder="Tell us about your specific needs..." required>
-                </div>
-                <div class="button">
-                    <button class="submit-button" type="submit">Submit</button>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="./images/head-hero.png" alt="Brain-Computer Interface Visualization">
             </div>
-        <!-- Footer -->
-        <div class="grid-footer">
-                <div class="footer-text">
-                    <p>© 2025 Cogniface. All rights reserved.</p>
-                    <p>Privacy Policy | Terms of Service</p>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions">
+            <div class="section-header">
+                <h2>Our AI-Powered Healthcare Solutions</h2>
+                <p>Advanced brain-computer interface technologies designed for real-world clinical applications</p>
+            </div>
+
+            <!-- Solution 1: EEG2Face -->
+            <div class="solution-part">
+                <div class="solution-image">
+                    <img src="./images/eeg2face.png" alt="EEG2Face Neural Interface">
                 </div>
+                <div class="solution-content">
+                    <h3>EEG2Face&#8482; &mdash; Patented Neural Interface</h3>
+                    <p class="solution-subtitle">Transform brain signals into expressive 3D facial reconstructions</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Real-time EEG signal processing for instant facial expression reconstruction</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Non-invasive brain-computer interface requiring no surgical implants</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Personalized emotion mapping calibrated to individual neural patterns</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('eeg2faceModal')">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Solution 2: Multimodal Fusion (Flipped) -->
+            <div class="solution-part flipped">
+                <div class="solution-image">
+                    <img src="./images/fusion.jpg" alt="Multimodal Fusion AI System">
+                </div>
+                <div class="solution-content">
+                    <h3>Multimodal Fusion AI System</h3>
+                    <p class="solution-subtitle">Unlock complete human insights through brain, face, and voice fusion</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Combines brain waves, facial expressions, and voice into one powerful AI system</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Automatic signal compensation maintains accuracy when inputs are weak or missing</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Works with any EEG headset, camera, or microphone you already own</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('ambtModal')">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Solution 3: EEG Emotion Monitoring -->
+            <div class="solution-part">
+                <div class="solution-image">
+                    <img src="./images/EEG-monitoring.jpg" alt="EEG Emotion State Monitoring">
+                </div>
+                <div class="solution-content">
+                    <h3>EEG Emotion State Monitoring</h3>
+                    <p class="solution-subtitle">Real-time emotional intelligence through brain signal analysis</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Detects happiness, stress, excitement, and calmness in real-time through brain signals</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Simply wear any EEG headset for continuous emotional insights</span>
+                        </li>
+                        <li>
+                            <span class="material-icons check-icon">check_circle</span>
+                            <span>Ready-to-use API integrates seamlessly into apps, games, VR experiences, or clinical environments</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('zeroShotModal')">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- EEG2Face Modal -->
+        <div id="eeg2faceModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('eeg2faceModal')">
+                    <span class="material-icons">close</span>
+                </button>
+                <div class="modal-header">
+                    <h3>EEG2Face Neural Reconstruction</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="./images/eeg2face-diagram.png" alt="EEG2Face Architecture Diagram">
+                    </div>
+                    <div class="modal-text">
+                        <p><strong>EEG2Face</strong> is a groundbreaking neural interface that transforms raw brain signals into dynamic 3D facial expressions in real-time. The system processes both raw and filtered EEG inputs through dual neural encoders, extracting emotion-aligned latent representations.</p>
+                        <p>Using <strong>contrastive learning</strong> and the <strong>FLAME 3D morphable face model</strong>, EEG2Face learns to map neural activity directly to facial mesh vertices, enabling accurate reconstruction of emotional expressions without requiring any camera input from the user.</p>
+                        <p>This patented technology opens new possibilities for patients with communication disabilities to express themselves through thought-controlled facial avatars.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#contact" class="btn btn-primary" onclick="closeModal('eeg2faceModal')">Request a Demo</a>
+                </div>
+            </div>
         </div>
 
+        <!-- AMBT Modal -->
+        <div id="ambtModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('ambtModal')">
+                    <span class="material-icons">close</span>
+                </button>
+                <div class="modal-header">
+                    <h3>Recognition Software</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="./images/ambt.png" alt="AMBT-Emotion Multimodal Recognition Diagram">
+                    </div>
+                    <div class="modal-text">
+                        <p><strong>AMBT-Emotion</strong> is a multimodal emotion recognition software that jointly analyzes EEG signals, speech audio, and facial video to predict human emotional states in a robust and computationally efficient way.</p>
+                        <p>The system is powered by the <strong>Adaptive Multimodal Bottleneck Transformer (AMBT)</strong>, enabling stable cross-modal fusion with minimal additional parameters, making it suitable for both research experiments and real-world applications.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#contact" class="btn btn-primary" onclick="closeModal('ambtModal')">Request a Demo</a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Zero-Shot Modal -->
+        <div id="zeroShotModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('zeroShotModal')">
+                    <span class="material-icons">close</span>
+                </button>
+                <div class="modal-header">
+                    <h3>Zero-Calibration Emotion AI</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="./images/zero_shot_website.png" alt="Zero-Shot Emotion Recognition Framework Diagram">
+                    </div>
+                    <div class="modal-text">
+                        <p>Our proprietary multimodal framework eliminates the need for lengthy patient training sessions, delivering <strong>95% comparable accuracy</strong> to traditional supervised methods instantly.</p>
+                        <p>By leveraging audio-visual cues to guide EEG decoding, this solution enables immediate, reliable emotion recognition for clinical and rehabilitation environments.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#contact" class="btn btn-primary" onclick="closeModal('zeroShotModal')">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <p>Pioneering the future of neurotechnology at Nazarbayev University</p>
+            </div>
+
+            <div class="team-photo">
+                <img src="./images/team.png" alt="Cogniface Research Team">
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span class="material-icons">history_edu</span>
+                    </div>
+                    <h3>Our Story</h3>
+                    <p>Born from a shared fascination with the intersection of science, artificial intelligence, and medicine, our team represents the convergence of breakthrough research and compassionate care. We are researchers, engineers, and medical professionals who recognized that neurological challenges require innovative, interdisciplinary solutions.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span class="material-icons">flag</span>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>We exist to transform the lives of individuals suffering from neurological and psychological conditions through revolutionary AI-powered medical technologies. Our work focuses on restoring fundamental human capabilities &mdash; communication, expression, and connection &mdash; that these conditions often compromise.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span class="material-icons">psychology</span>
+                    </div>
+                    <h3>The Challenge</h3>
+                    <p>Neurological and psychological diseases affect millions worldwide, often limiting the ability to communicate, express emotions, or maintain independence. Traditional treatments frequently fall short of addressing complex, individualized patient needs. We bridge this gap with technology that restores genuine human connection.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">
+                        <span class="material-icons">biotech</span>
+                    </div>
+                    <h3>Our Approach</h3>
+                    <p>What sets us apart is our unique combination of deep scientific expertise and genuine empathy for patient experiences. We create bridges between the human brain's incredible potential and the external world, designing solutions with real patients in mind throughout the development process.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents Section -->
+        <section id="patents" class="patents">
+            <div class="section-header">
+                <h2>Patented Innovation</h2>
+                <p>Our technology offers groundbreaking applications for healthcare professionals working with patients who have communication disabilities</p>
+            </div>
+
+            <!-- Patent 1: EEG2Face -->
+            <div class="patent-part">
+                <div class="patent-image">
+                    <img src="./images/patent-img.jpg" alt="EEG2Face Patent Certificate">
+                </div>
+                <div class="patent-content">
+                    <div class="patent-badge">
+                        <span class="material-icons">verified</span>
+                        <span>Granted</span>
+                    </div>
+                    <h3>Patent No. 11561</h3>
+                    <p class="patent-title">System and Method for Generating 3D Facial Avatars Using EEG/EMG Signals (EEG2Face)</p>
+                    <ul class="patent-details">
+                        <li><strong>Inventors:</strong> Minho Lee (KR)</li>
+                        <li><strong>Applicant:</strong> Nazarbayev University (KZ)</li>
+                        <li><strong>Status:</strong> Domestic patent granted; U.S. patent application in preparation</li>
+                    </ul>
+                    <div class="patent-credentials">
+                        <p>Digitally signed by S. Akhmetov, Director of the National Institute of Intellectual Property</p>
+                        <p>Full patent details at <a href="https://www.kazpatent.kz" target="_blank" rel="noopener noreferrer">www.kazpatent.kz</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patent 2: Multimodal Merging -->
+            <div class="patent-part flipped">
+                <div class="patent-image">
+                    <img src="./images/second-patent.png" alt="Multimodal Merging Patent Certificate">
+                </div>
+                <div class="patent-content">
+                    <div class="patent-badge">
+                        <span class="material-icons">verified</span>
+                        <span>Granted</span>
+                    </div>
+                    <h3>Patent No. 10465</h3>
+                    <p class="patent-title">Method and System for Multimodal Merging of Electroencephalogram, Audio and Video Data</p>
+                    <ul class="patent-details">
+                        <li><strong>Inventors:</strong> Minho Lee (KR), Sabina Bralina (KZ)</li>
+                        <li><strong>Applicant:</strong> Nazarbayev University (KZ)</li>
+                        <li><strong>Filing Date:</strong> 08.09.2025</li>
+                        <li><strong>Publication Date:</strong> 19.12.2025</li>
+                    </ul>
+                    <div class="patent-credentials">
+                        <p>Digitally signed by S. Akhmetov, Director of the National Institute of Intellectual Property</p>
+                        <p>Full patent details at <a href="https://www.kazpatent.kz" target="_blank" rel="noopener noreferrer">www.kazpatent.kz</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Healthcare Practice?</h2>
+                    <p>
+                        Connect with our team to explore how Cogniface's brain-computer interface solutions can enhance patient care, enable new therapeutic approaches, and advance your research capabilities.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="material-icons">email</span>
+                            <span>minho.lee@nu.edu.kz</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="material-icons">phone</span>
+                            <span>+7 776 828 93 72</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="material-icons">location_on</span>
+                            <span>Nazarbayev University, Kazakhstan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" placeholder="Hospital, University, or Company">
+                        </div>
+                        <div class="form-group">
+                            <label for="solution">Solution Interest</label>
+                            <select id="solution">
+                                <option value="">Select a solution</option>
+                                <option value="eeg2face">EEG2Face Neural Interface</option>
+                                <option value="multimodal">Multimodal Fusion AI</option>
+                                <option value="emotion">EEG Emotion Monitoring</option>
+                                <option value="custom">Custom Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us about your specific needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="./images/logo-cogniface.png" alt="Cogniface Logo" width="40" height="40">
+                    <span>Cogniface</span>
+                </a>
+                <p>Advancing brain-computer interface technology for healthcare applications.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#solutions">EEG2Face</a></li>
+                    <li><a href="#solutions">Multimodal Fusion</a></li>
+                    <li><a href="#solutions">Emotion Monitoring</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://zenodo.org/records/10205702" target="_blank">Dataset</a></li>
+                    <li><a href="https://github.com/nubcico/EAV" target="_blank">GitHub</a></li>
+                    <li><a href="#patents">Patents</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cogniface. All rights reserved. | Nazarbayev University, Kazakhstan</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal.active').forEach(function(modal) {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
 </body>
 </html>
